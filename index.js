@@ -28,9 +28,6 @@ app.use('/api/login', loginRouter);
 app.use('/api/edit/phonenumber', editPhoneNumberRouter);
 app.use('/submit-test', submitTestRouter);
 
-const seed = require('./seed');
-
-seed();
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
